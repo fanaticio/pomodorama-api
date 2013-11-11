@@ -1,0 +1,40 @@
+common: &common
+  options:
+    raise_not_found_error: true
+    scope_overwrite_exception: true
+
+development:
+  << : *common
+  sessions:
+    default:
+      database: pomodorama_api_development
+      hosts:
+        - localhost:27017
+
+production:
+  << : *common
+  sessions:
+    default:
+      database: pomodorama_api_production
+      hosts:
+        - localhost:27017
+
+staging:
+  << : *common
+  sessions:
+    default:
+      database: pomodorama_api_staging
+      hosts:
+        - localhost:27017
+
+test:
+  << : *common
+  sessions:
+    default:
+      database: pomodorama_api_test
+      hosts:
+        - localhost:27017
+      options:
+        consistency: :strong
+        max_retries: 1
+        retry_interval: 0
