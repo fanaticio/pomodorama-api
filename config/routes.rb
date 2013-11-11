@@ -1,2 +1,2 @@
-PomodoramaApi::Application.routes.draw do
+PomodoramaAPI::Application.routes.draw do
 end

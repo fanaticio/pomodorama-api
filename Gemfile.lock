@@ -248,7 +248,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   dalli (~> 2.6.4)
   dotenv-rails (~> 0.9.0)
-  grape
+  grape (~> 0.6.1)
   jazz_hands (~> 0.5.2)
   jquery-rails (~> 3.0.4)
   mongoid (~> 3.1.5)
