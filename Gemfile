@@ -29,6 +29,7 @@ group :test do
 end
 
 gem 'bson_ext',             '~> 1.9.2'
+gem 'coveralls',            '~> 0.7.0', require: false
 gem 'dalli',                '~> 2.6.4'
 gem 'grape',                '~> 0.6.1'
 gem 'jquery-rails',         '~> 3.0.4'
