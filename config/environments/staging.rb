@@ -8,6 +8,6 @@ PomodoramaApi::Application.configure do
   config.cache_store                        = :dalli_store
   config.consider_all_requests_local        = false
   config.i18n.fallbacks                     = true
-  config.log_level                          = :error
+  config.log_level                          = :info
   config.serve_static_assets                = false
 end

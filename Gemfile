@@ -1,37 +1,27 @@
-source 'https://rubygems.org'
+ruby    '2.0.0'
+source  'https://rubygems.org'
 
-gem 'rails', '3.2.15'
+gem 'rails',                '3.2.15'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-
-
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails',         '~> 3.2.3'
+  gem 'coffee-rails',       '~> 3.2.1'
+  gem 'uglifier',           '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+group :development, :test do
+  gem 'better_errors',      '~> 1.0.1'
+  gem 'binding_of_caller',  '~> 0.7.2'
+  gem 'brakeman',           '~> 2.2.0', require: false
+  gem 'dotenv-rails',       '~> 0.9.0'
+  gem 'jazz_hands',         '~> 0.5.2'
+  gem 'quiet_assets',       '~> 1.0.2'
+end
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+gem 'bson_ext',             '~> 1.9.2'
+gem 'dalli',                '~> 2.6.4'
+gem 'grape',                '~> 0.6.1'
+gem 'jquery-rails',         '~> 3.0.4'
+gem 'mongoid',              '~> 3.1.5'
+gem 'slim',                 '~> 2.0.2'
+gem 'unicorn',              '~> 4.7.0'
