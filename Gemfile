@@ -23,7 +23,7 @@ end
 
 group :test do
   gem 'rspec-rails',        '~> 2.14.0'
-  gem 'cucumber-api-steps', git: 'git@github.com:jayzes/cucumber-api-steps.git', require: false
+  gem 'cucumber-api-steps', git: 'https://github.com/jayzes/cucumber-api-steps.git', require: false
   gem 'cucumber-rails',     '~> 1.4.0'
   gem 'database_cleaner',   '~> 1.1.1'
   gem 'vcr',                '~> 2.5.0'

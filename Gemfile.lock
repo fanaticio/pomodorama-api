@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:jayzes/cucumber-api-steps.git
+  remote: https://github.com/jayzes/cucumber-api-steps.git
   revision: 0251167f42e581a00f059baac0119fb01d63c4ab
   specs:
     cucumber-api-steps (0.12)
