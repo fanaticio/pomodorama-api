@@ -14,8 +14,8 @@ module PomodoramaAPI
     config.active_support.escape_html_entities_in_json  = true
     config.assets.enabled                               = true
     config.assets.version                               = '1.0'
-    config.encoding                                     = "utf-8"
-    config.filter_parameters                            += [:password]
+    config.encoding                                     = 'utf-8'
+    config.filter_parameters                           += [:password]
     config.i18n.default_locale                          = :en
     config.time_zone                                    = 'Europe/Paris'
   end
