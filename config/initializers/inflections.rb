@@ -1,4 +1,4 @@
 ActiveSupport::Inflector.inflections do |inflect|
-  inflect.acronym('API')
-  inflect.acronym('APIs')
+  inflect.acronym     'API'
+  inflect.acronym     'APIs'
 end

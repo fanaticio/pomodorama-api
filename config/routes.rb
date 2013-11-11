@@ -1,3 +1,3 @@
 PomodoramaAPI::Application.routes.draw do
-  mount Pomodorama::API::App => '/'
+  mount V1::App => '/'
 end
