@@ -5,6 +5,7 @@ gem 'rails',                '3.2.15'
 group :assets do
   gem 'sass-rails',         '~> 3.2.3'
   gem 'coffee-rails',       '~> 3.2.1'
+  gem 'therubyracer',       '~> 0.12.0', platforms: :ruby
   gem 'uglifier',           '>= 1.0.3'
 end
 
@@ -22,9 +23,7 @@ end
 
 group :test do
   gem 'rspec-rails',        '~> 2.14.0'
-  gem 'cucumber-api-steps',
-    git: 'git@github.com:jayzes/cucumber-api-steps.git',
-    require: false
+  gem 'cucumber-api-steps', git: 'git@github.com:jayzes/cucumber-api-steps.git', require: false
   gem 'cucumber-rails',     '~> 1.4.0'
   gem 'database_cleaner',   '~> 1.1.1'
   gem 'vcr',                '~> 2.5.0'

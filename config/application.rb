@@ -19,9 +19,6 @@ module PomodoramaAPI
     config.i18n.default_locale                          = :en
     config.time_zone                                    = 'Europe/Paris'
 
-    config.autoload_paths                               += Dir["#{Rails.root}/app/api/**"]
-    config.paths.add                                    'app/api', glob: '**/*.rb'
-
     config.middleware.use Rack::Cors do
       allow do
         origins '*'
