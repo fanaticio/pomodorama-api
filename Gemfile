@@ -16,10 +16,6 @@ group :development do
   gem 'quiet_assets',       '~> 1.0.2'
 end
 
-group :development, :test do
-  gem 'dotenv-rails',       '~> 0.9.0'
-end
-
 group :test do
   gem 'rspec-rails',        '~> 2.14.0'
   gem 'cucumber-rails',     '~> 1.4.0'
@@ -31,6 +27,7 @@ end
 gem 'bson_ext',             '~> 1.9.2'
 gem 'coveralls',            '~> 0.7.0', require: false
 gem 'dalli',                '~> 2.6.4'
+gem 'dotenv-rails',         '~> 0.9.0'
 gem 'grape',                '~> 0.6.1'
 gem 'jquery-rails',         '~> 3.0.4'
 gem 'mongoid',              '~> 3.1.5'
