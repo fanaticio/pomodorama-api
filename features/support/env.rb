@@ -1,5 +1,8 @@
+require 'coveralls'
 require 'cucumber/rails'
 require 'cucumber/api_steps'
+
+Coveralls.wear_merged!('rails')
 
 ActionController::Base.allow_rescue = false
 
