@@ -18,5 +18,12 @@ module PomodoramaAPI
     config.filter_parameters                           += [:password]
     config.i18n.default_locale                          = :en
     config.time_zone                                    = 'Europe/Paris'
+
+    config.middleware.use Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :options]
+      end
+    end
   end
 end
