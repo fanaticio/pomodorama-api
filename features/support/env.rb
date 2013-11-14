@@ -1,4 +1,5 @@
 require 'cucumber/rails'
+require 'cucumber/api_steps'
 
 ActionController::Base.allow_rescue = false
 

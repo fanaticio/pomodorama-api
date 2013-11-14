@@ -38,3 +38,7 @@ test:
         consistency: :strong
         max_retries: 1
         retry_interval: 0
+  options:
+    protect_sensitive_fields: false
+    raise_not_found_error: true
+    scope_overwrite_exception: true
